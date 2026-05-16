@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Criar Post</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>Novo Post</h1>
+
+    <form id="formPost">
+      <input 
+        type="text" 
+        id="titulo" 
+        placeholder="Digite o título do post"
+      />
+
+      <textarea 
+        id="conteudo" 
+        placeholder="Escreva seu conteúdo aqui"
+      ></textarea>
+
+      <button type="submit">Postar</button>
+    </form>
+
+    <div id="resultado"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
