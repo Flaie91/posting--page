@@ -1,7 +1,7 @@
 const formPost = document.querySelector("#formPost");
 const titulo = document.querySelector("#titulo");
 const conteudo = document.querySelector("#conteudo");
-const resultado = document.querySelector("#resultado");
+const tituloRenderizar = document.querySelector("#resultado");
 
 formPost.addEventListener("submit", function (event) {
   event.preventDefault();
@@ -21,7 +21,7 @@ formPost.addEventListener("submit", function (event) {
   })
     .then((response) => response.json())
     .then((dados) => {
-      resultado.innerHTML = `
+      tituloRenderizar = `
         Post criado com sucesso!<br><br>
         ID: ${dados.id}<br>
         Título: ${dados.title}
@@ -31,7 +31,7 @@ formPost.addEventListener("submit", function (event) {
       formPost.reset();
     })
     .catch((erro) => {
-      resultado.innerHTML = "Erro ao criar post.";
+      tituloRenderizar = "Erro ao criar post.";
       console.log(erro);
     });
 });
