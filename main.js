@@ -24,7 +24,8 @@ formPost.addEventListener("submit", function (event) {
       tituloRenderizar = `
         Post criado com sucesso!<br><br>
         ID: ${dados.id}<br>
-        Título: ${dados.title}
+        Título: ${dados.title}<br>
+        Conteúdo: ${dados.body}
       `;
       
 
